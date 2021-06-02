@@ -8,7 +8,6 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            ColorManager colorManager = new ColorManager(new EfColorDal());
         }
     }
 }
