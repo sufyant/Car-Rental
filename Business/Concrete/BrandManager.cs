@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Business.Abstract;
+using Core.Utilities.Results.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -13,6 +15,16 @@ namespace Business.Concrete
             _brandDal = brandDal;
         }
 
+
+        public IDataResult<List<Brand>> GetAll()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IDataResult<Brand> GetBrandById(int brandId)
+        {
+            throw new System.NotImplementedException();
+        }
 
         public void Add(Brand brand)
         {

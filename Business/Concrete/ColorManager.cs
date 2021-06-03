@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Business.Abstract;
+using Core.Utilities.Results.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -14,6 +15,16 @@ namespace Business.Concrete
             _colorDal = colorDal;
         }
 
+
+        public IDataResult<List<Color>> GetAll()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public IDataResult<Color> GetColorById(int colorId)
+        {
+            throw new System.NotImplementedException();
+        }
 
         public void Add(Color color)
         {
